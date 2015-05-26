@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game with Console</title>
+	<link rel="stylesheet" type="text/css" href="gamestyles.css">
+	<script>
+		function game() {
+			// Check if the user is ready to play!
+			// Be sure to stop the function if they cancel
+			if (!confirm("Let's Begin!")) {
+				return;
+			}
+
+			// verify their age
+			// if less than 13 they play at their own risk
+			
+			/* if () {
+			    	console.log("You may play but at your own risk");
+			   } else {
+			   		console.log("Enjoy the game");    
+			   } */
+
+			// Begin game
+			// story introduction
+			/* console.log("As you are walking through the woods you notice a fox resting beneath a tree.");
+			console.log("Suddenly, the fox junps up and says, 'Do you want to race me?'"); */
+			
+			// ask user if they want to race
+			// var userAnswer = prompt("Do you want to race me on the trail?"); 
+
+			// race outcome
+			// If yes they win, if no the fox does his own thing
+			/* if () {
+			    	console.log("You and the fox start racing. It's neck and neck! You win by a nose!");
+			    } else {
+			        console.log("Oh no! The fox shakes his head and sings 'I set a pace, so I can race without pacing.'");    
+			    }
+			    */
+			// ask user to rate your game
+			// more than 8 is great. Thanks them    
+			
+		}
+
+		// add function for when they click No
+		function nextTime() {
+			
+		}
+
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Do you want to play a game?</h1>
+		<h2 onclick="game()">Yes</h2>
+		<h2 onclick="nextTime()">No</h2>
+	</header>
+</body>
+</html>

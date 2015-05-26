@@ -1,0 +1,310 @@
+
+/****** RESET ******/
+body {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+	margin-top: 0.4em;
+}
+p {
+	font-family:Aller, Times, serif;
+	font-weight:lighter;
+	line-height: 1.5em;
+}
+a {
+	color: #46B;
+	text-decoration: none;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {	/*Ensures that new structural elements are display:block for older browsers*/
+	display:block;
+}
+mark {
+	background-color:#FF0;
+}
+
+/****** GENERAL STRUCTURE ******/
+body {
+	background: rgb(100,150,200);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    rgb(150,190,220) 0%,
+		rgb(235,240,255) 60%,
+	    rgb(245,250,255) 100%
+	);
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(150,190,220)),
+	    color-stop(.6, rgb(235,240,255)),
+	    color-stop(1, rgb(245,250,255))
+	);
+}
+.wrapper {
+	background-color:#CDF;
+	width: 900px;
+	margin: 0 auto 50px;
+	padding-bottom: 15px;
+
+	/*--prevent the element from collapsing*/
+	overflow: hidden;
+	
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	-moz-border-bottom-left-radius:20px;
+	-moz-border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	
+	box-shadow:0px 0px 6px #57A;
+	-moz-box-shadow:0px 0px 6px #57A;
+	-webkit-box-shadow:0px 0px 6px #57A;
+}
+
+/****** HEADER ******/
+.banner {
+	background-color:#F80;
+	background: -moz-linear-gradient(
+	    center bottom,
+	    rgb(245,110,0) 0%,
+	    rgb(255,150,0) 100%
+	);
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(1, rgb(255,150,0)),
+	    color-stop(0, rgb(245,110,0))
+	);
+	position: relative;
+	margin: 0 0 15px 0;
+
+	/*--prevent the element from collapsing*/
+	overflow: hidden;
+	width: 100%;
+}
+.banner img {
+	float: left;
+	margin: 10px 0 0 25px;
+	background-color:#FFF;
+	padding: 6px;
+	border: solid 1px #333;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+}
+.banner hgroup {
+	color: white;
+	text-shadow:1px 1px 3px #000;
+	float: left;
+	margin-left: 20px;
+}
+.banner hgroup h1 {
+	font-family: ChunkFiveRoman, Times;
+}
+
+/****** HEADER NAVIGATION ******/
+.banner nav {
+	background-color:#ACF;
+	float: right;
+	margin: 14px 14px 0;
+	padding: 4px;
+	border: solid 2px #BCF;
+
+	border-radius:16px;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+
+	box-shadow: 0 0 3px #469;
+	-moz-box-shadow: 0 0 3px #469;
+	-webkit-box-shadow: 0 0 3px #469;
+}
+.banner nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.banner nav ul li {
+	float: left;
+	padding: 0 10px;
+	border-left: solid 1px #357;
+}
+.banner nav ul li:first-child {
+	border-left: none;
+}
+.banner nav ul li a {
+	color: #036;
+	text-decoration: none;
+	-webkit-transition: color 0.2s linear; /*This enables animation for the color property*/
+	-moz-transition-property: color 0.2s linear;
+}
+.banner nav ul li a:hover {
+	color: #B60;
+	text-decoration: underline;
+	position: relative;
+	top: -1px;
+	left: -1px;
+	text-shadow:2px 2px 2px rgba(100,100,100,.3);	
+}
+
+/****** CONTENT AREA STRUCTURE ******/
+.wrapper>section {
+	width: 590px;
+	margin: 0 0 0 15px;
+}
+section {
+	background-color:#79C;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	
+	box-shadow:1px 2px 5px #57A;
+	-moz-box-shadow:1px 2px 5px #57A;
+	-webkit-box-shadow:1px 2px 5px #57A;
+	-webkit-transition: -webkit-box-shadow 0.2s linear;
+	-moz-transition: -moz-box-shadow 0.2s linear;
+}
+section:hover {
+	box-shadow:1px 2px 5px #247;
+	-moz-box-shadow:1px 2px 5px #247;
+	-webkit-box-shadow:1px 2px 5px #247;
+}
+.wrapper section,
+.wrapper aside section {
+	float: left;
+	margin-bottom: 25px;
+}
+.wrapper section.archive {
+	margin-bottom: 0px;
+}
+.wrapper section header,
+.wrapper aside header {
+	color: white;
+	text-shadow:1px 1px 3px #000;
+	text-align: center;
+	padding: 5px 0 5px;
+}
+.wrapper section header h1,
+.wrapper aside h1 {
+	margin: 0;
+}
+.wrapper aside section {
+	width: 100%;
+	color:#235;
+	background-color:#79C;
+}
+.wrapper aside section div {
+	padding: 5px 10px 5px;
+	background-color:#9BD;
+}
+.wrapper aside section div p:first-child {
+	margin-top: 0;
+}
+.wrapper aside section div p:last-child {
+	margin-bottom: 0;
+}
+.wrapper aside section div ul {
+	color: #469;
+}
+.wrapper section article {
+	padding: 0 1em;
+	background-color:#9BD;
+	border-bottom: solid 1px #79C;
+
+	/*--prevent the element from collapsing*/
+	overflow: hidden;
+}
+.wrapper section article:last-child {
+	border-bottom: none;
+	border-bottom-left-radius:10px;
+	-moz-border-bottom-left-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	-moz-border-bottom-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+}
+.wrapper section article header h1 {
+	font-size: 1.4em;
+	text-align: left;
+	padding-top: 4px;
+}
+.wrapper section article p {
+	color: #235;
+}
+.wrapper section article video,
+.wrapper section article audio {
+	float: left;
+	margin-right: 10px;
+}
+.wrapper aside {
+	float: right;
+	width: 260px;
+	margin: 0 15px 0 0;
+}
+
+/****** FORMS ******/
+#contact {
+	overflow: hidden; /*To ensure the form doesn't collapse*/
+	margin: 20px;
+	padding: 20px 30px 16px;
+	background-color:#9BD;
+	border: solid 1px #456;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+#contact label {
+	float: left;
+	clear: left;
+	width: 150px;
+	margin: 10px 10px 0 0;
+	font-weight: bold;
+	color: white;
+	text-shadow:1px 1px 2px #000;	
+}
+#contact input, #contact textarea {
+	float: left;
+	width: 250px;
+	margin-top: 10px;
+}
+#contact button {
+	float: left;
+	clear: left;
+	margin-left: 354px;
+	margin-top: 5px;
+}
+input:invalid { /*Triggers when validation fails in a form input field.*/
+	background-color:#F66;
+	border: solid 2px #D44;
+}
+input:required { /*Triggers when validation fails in a form input field.*/
+	background-color:#FFF;
+	border: solid 2px #F66;
+}
+/****** Miscellaneous Classes ******/
+.copyright {
+	text-align:center;
+	font-style:italic;
+	color:#345;
+	font-size:.7em;
+	margin: .5em 0;
+}
+.snowman {
+	display: block;
+	margin: 0 auto;
+	border: solid 1px #468;
+}
+
+.fRight {
+	float: right;
+	margin-left: 6px;
+}
+.fLeft {
+	float: left;
+	margin-right: 6px;
+}
+.clear {
+	clear: both;
+}

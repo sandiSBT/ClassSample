@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Joe Schmoe :: Contact</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="fonts.css">
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="banner">
+				<img src="../media/joe_portrait.jpg" width="89" height="80" alt="Joe Portrait">
+				<hgroup>
+					<h1>Joe Schmoe</h1>
+					<h2>The Online Portfolio of Joe Schmoe</h2>
+				</hgroup>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="media.html">Media</a></li>
+						<li><a href="news.html">News</a></li>
+						<li class="current"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section class="latest">
+				<header>
+					<h1>Contact Joe</h1>
+				</header>
+				
+				<form name="contactForm" id="contact">
+					<label for="name">Name <span>(required)</span></label>
+					<input tabindex="1" type="text" name="name" id="name" placeholder="required" required autofocus />
+
+					<label for="mail">Email <span>(required)</span></label>
+					<input tabindex="2" type="email" name="mail" id="mail" placeholder="required" required />
+
+					<label for="phone">Telephone</label>
+					<input tabindex="3" type="tel" name="phone" id="phone" />
+
+					<label for="message">Message</label>
+					<textarea tabindex="4" cols="30" rows="10" name="message" id="message"></textarea>
+
+					<button tabindex="5" type="submit" name="submit" id="send">Submit</button>
+				</form>
+			</section>
+			<aside>
+				<section>
+					<header>
+						<h1>About Joe</h1>
+					</header>
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nunc ligula, convallis ut interdum sed, dapibus et tortor. Nam nisl orci, faucibus condimentum mollis quis, gravida et tortor. Pellentesque id mauris id urna mattis lobortis ultrices ut libero. Nam condimentum eros ac nibh tincidunt ut cursus ligula molestie. Fusce bibendum elit ut ante vehicula tincidunt.</p>
+					</div>
+					<footer>
+						<p class="copyright">All content is copyright, <wbr>Joe Schmoe 2010</p>
+					</footer>
+				</section>
+			</aside>
+		</div>
+	</body>
+</html>

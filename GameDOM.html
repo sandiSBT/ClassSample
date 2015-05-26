@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game with DOM</title>
+	<link rel="stylesheet" type="text/css" href="gamestyles.css">
+	<script>
+		function game() {
+				// Check if the user is ready to play!
+
+			var play = confirm("Let's Begin!");
+			var age = prompt("What's your age?");
+			if (age < 13) {
+			    document.getElementById("output").innerHTML ="You may play but at your own risk";
+			    } else {
+			    document.getElementById("output").innerHTML ="Enjoy the game";    
+			    }
+
+			// game begins
+			// story introduction
+			console.log("As you are walking through the woods you notice a fox resting beneath a tree.");
+			console.log("Suddenly, the fox junps up and says, 'Do you want to race me?'");
+			var userAnswer = prompt("Do you want to race me on the trail?");
+
+			// race outcome
+			if (userAnswer === "yes") {
+			    document.getElementById("output").innerHTML ="You and the fox start racing. It's neck and neck! You win by a nose!";
+			   } else {
+			    document.getElementById("output").innerHTML ="Oh no! The fox shakes his head and sings 'I set a pace, so I can race without pacing.'";    
+			   }
+			    
+			// user feedback & rating    
+			var feedback = prompt("Rate my game. 1 - 10");
+			if (feedback > 8) {
+			    document.getElementById("feedback").innerHTML ="Thank you! We should race at the next concert!";
+			} else {
+			    document.getElementById("feedback").innerHTML ="I'll keep practicing coding and racing";
+			}
+		}
+
+		function nextTime() {
+			confirm("Maybe next time");
+		}
+
+	</script>
+
+</head>
+<body>
+	<header>
+		<h1>Do you want to play a game?</h1>
+		<h2 onclick="game()">Yes</h2>
+		<h2 onclick="nextTime()">No</h2>
+	</header>
+	<div>
+		<h2>Game Messages</h2>
+		<p id="output"></p>
+		<p id="feedback"></p>
+	</div>
+</body>
+</html>

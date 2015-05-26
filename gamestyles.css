@@ -1,0 +1,15 @@
+		body {
+			background-color: #999161;
+		}
+		div {
+			background-color: #1BC2CC;
+			width: 400px;
+			border: 2px solid #000;
+			padding-left: 5px;
+			text-align: center;
+		}
+		header h2 {
+			display: inline-block;
+			width: 200px;
+			text-align: center;
+		}

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Game with Console</title>
+	<link rel="stylesheet" type="text/css" href="gamestyles.css">
+	<script>
+		function game() {
+			// Check if the user is ready to play!
+			// Be sure to stop the function if they cancel
+			if (!confirm("Let's Begin!")) {
+				return;
+			}
+
+			// verify their age
+			// if less than 13 they play at their own risk
+			var age = prompt("What's your age?");
+			if (age < 13) {
+			    	console.log("You may play but at your own risk");
+			   } else {
+			   		console.log("Enjoy the game");    
+			   }
+
+			// Begin game
+			// story introduction
+			console.log("You are at a Justin Bieber concert, and you hear this lyric 'Lace my shoes off, start racing.'");
+			console.log("Suddenly, Bieber stops and says, 'Who wants to race me?'");
+			
+			// ask user if they want to race
+			var userAnswer = prompt("Do you want to race Bieber on stage?");
+
+			// race outcome
+			// If yes they win, if no Justin does his own thing
+			if (userAnswer === "yes") {
+			    	console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+			    } else {
+			        console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");    
+			    }
+			    
+			// ask user to rate your game
+			// more than 8 is great. Thanks them    
+			var feedback = prompt("Rate my game. 1 - 10");
+			if (feedback > 8) {
+			    console.log("Thank you! We should race at the next concert!");
+			} else {
+			    console.log("I'll keep practicing coding and racing");
+			}
+		}
+
+		// add function for when they click No
+		function nextTime() {
+			confirm("Maybe next time");
+		}
+
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Do you want to play a game?</h1>
+		<h2 onclick="game()">Yes</h2>
+		<h2 onclick="nextTime()">No</h2>
+	</header>
+</body>
+</html>
