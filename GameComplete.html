@@ -16,9 +16,9 @@
 			// if less than 13 they play at their own risk
 			var age = prompt("What's your age?");
 			if (age < 13) {
-			    	console.log("You may play but at your own risk");
+			    	document.getElementById("output").innerHTML ="You may play but at your own risk";
 			   } else {
-			   		console.log("Enjoy the game");    
+			   	document.getElementById("output").innerHTML ="Enjoy the game";     
 			   }
 
 			// Begin game
@@ -32,18 +32,18 @@
 			// race outcome
 			// If yes they win, if no Justin does his own thing
 			if (userAnswer === "yes") {
-			    	console.log("You and Bieber start racing. It's neck and neck! You win by a shoelace!");
+			     document.getElementById("output").innerHTML ="You and the fox start racing. It's neck and neck! You win by a nose!";
 			    } else {
-			        console.log("Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'");    
+			      document.getElementById("output").innerHTML ="Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'";    
 			    }
 			    
 			// ask user to rate your game
 			// more than 8 is great. Thanks them    
 			var feedback = prompt("Rate my game. 1 - 10");
 			if (feedback > 8) {
-			    console.log("Thank you! We should race at the next concert!");
+			    document.getElementById("feedback").innerHTML ="Thank you! We should race at the next concert!";
 			} else {
-			    console.log("I'll keep practicing coding and racing");
+			    document.getElementById("feedback").innerHTML ="I'll keep practicing coding and racing";
 			}
 		}
 
@@ -60,5 +60,10 @@
 		<h2 onclick="game()">Yes</h2>
 		<h2 onclick="nextTime()">No</h2>
 	</header>
+	<div>
+		<h2>Game Messages</h2>
+		<p id="output"></p>
+		<p id="feedback"></p>
+	</div>
 </body>
 </html>
